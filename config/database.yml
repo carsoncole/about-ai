@@ -15,10 +15,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  host: 192.168.0.200
+  username: about_ai
+  password: <%= Rails.application.credentials.dig(:db_password) %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
 
 development:
   <<: *default
@@ -82,7 +82,7 @@ production:
   primary: &primary_production
     <<: *default
     database: about_ai_production
-    username: about_ai
+
     password: <%= ENV["ABOUT_AI_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production

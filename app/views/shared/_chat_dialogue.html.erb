@@ -1,0 +1,39 @@
+<!-- app/views/shared/_chat_dialogue.html.erb -->
+<div id="chat-container" class="fixed right-4 bottom-4 w-96 flex flex-col bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300">
+  <!-- Chat Header -->
+  <div id="chat-header" class="bg-gray-800 text-white p-3 flex justify-between items-center cursor-pointer">
+    <h3 class="font-semibold">Questions about Carson?</h3>
+    <button id="minimize-chat" class="text-gray-300 hover:text-white focus:outline-none">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Chat Body -->
+  <div id="chat-body" class="flex flex-col">
+    <!-- Chat Messages -->
+    <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-4 max-h-[70vh]">
+      <div class="chat-message bot-message">
+        <div class="bg-gray-100 p-3 rounded-lg">
+          Hello! As his AI rep, I'm here to answer any questions about Carson.
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="border-t p-4 bg-gray-50">
+      <form id="chat-form" class="flex gap-2">
+        <input type="text"
+               id="chat-input"
+               class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+               placeholder="Type your question..."
+               autocomplete="off">
+        <button type="submit"
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
