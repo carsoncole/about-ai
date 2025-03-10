@@ -82,8 +82,6 @@ production:
   primary: &primary_production
     <<: *default
     database: about_ai_production
-
-    password: <%= ENV["ABOUT_AI_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: about_ai_production_cache
