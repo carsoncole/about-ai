@@ -11,7 +11,7 @@ class ExperiencesController < ApplicationController
   def update
     respond_to do |format|
       if @experience.update(experience_params)
-        format.html { redirect_to @experience, notice: "Experience was successfully updated." }
+        format.html { redirect_to root_path, notice: "Experience was successfully updated." }
         format.json { render :show, status: :ok, location: @experience }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -24,7 +24,7 @@ class ExperiencesController < ApplicationController
     @experience.destroy!
 
     respond_to do |format|
-      format.html { redirect_to experiences_path, status: :see_other, notice: "Experience was successfully destroyed." }
+      format.html { redirect_to root_path, status: :see_other, notice: "Experience was successfully destroyed." }
       format.json { head :no_content }
     end
   end

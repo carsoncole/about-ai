@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get "chat/message"
-  resources :experiences, except:[:index, :show]
+  resources :experiences, except: [ :index, :show ]
   resource :session
   resources :passwords, param: :token
-  resources :projects
+  resources :projects, except: [ :index, :show ]
   root "home#index"
   post '/chat/message', to: 'chat#message'
   get "up" => "rails/health#show", as: :rails_health_check
