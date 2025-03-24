@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get "chat/message"
-  resources :experiences
+  resources :experiences, except:[:index, :show]
   resource :session
   resources :passwords, param: :token
   resources :projects

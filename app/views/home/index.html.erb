@@ -1,7 +1,7 @@
 <% content_for :title, "Carson Cole" %>
 
 <% if @projects.any? %>
-  <section class="">
+  <section id="projects" class="pt-30">
     <h2 class="text-7xl font-extrabold text-slate-200">
       Projects
     </h2>
@@ -15,7 +15,7 @@
 <%= render 'shared/chat_dialogue' %>
 
 <% if @experiences.any? %>
-  <section class="">
+  <section id="experience" class="pt-20">
     <h2 class="text-7xl font-extrabold text-slate-200">
       Experience
     </h2>
@@ -26,7 +26,7 @@
   </section>
 <% end %>
 
-<section class="">
+<section id="connect" class="pt-20 pb-30">
   <h2 class="text-7xl font-extrabold text-slate-200">
     Connect
   </h2>
