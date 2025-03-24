@@ -1,7 +1,6 @@
 # About-AI
 
-This Ruby on Rails application is a personal website that provides an AI agent for answering any questions about you.
-
+This Ruby on Rails application is a personal profile website that provides an AI agent for answering any questions about you, in addition to highlighting personal experience, education and projects.
 
 
 ## Requirements
