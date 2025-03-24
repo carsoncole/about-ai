@@ -1,24 +1,16 @@
-# README
+# About-AI
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Ruby on Rails application is a personal website that provides an AI agent for answering any questions about you.
 
-Things you may want to cover:
+
+
+## Requirements
+
+* AnythingLLM
+This application uses AnythingLLM as the agent, which will maintain context and forward prompts to the LLM.
+
+* LLM
+You will need API access to an LLM that will provide responses back to the application.
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3.4.2
