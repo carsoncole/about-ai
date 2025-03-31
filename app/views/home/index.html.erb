@@ -1,16 +1,23 @@
 <% content_for :title, "Carson Cole" %>
 
-<% if @projects.any? %>
-  <section id="projects" class="pt-30">
-    <h2 class="text-7xl font-extrabold text-slate-200">
-      Projects
-    </h2>
-    <div class="-mt-15">
-      <%= render partial: 'projects/project', collection: @projects %>
-    </div>
 
-  </section>
-<% end %>
+
+<div class="flex gap-5 pt-30">
+  <% if @projects.any? %>
+    <section id="projects" class="">
+      <h2 class="text-7xl font-extrabold text-slate-200">
+        Projects
+      </h2>
+      <div class="-mt-15">
+        <%= render partial: 'projects/project', collection: @projects %>
+      </div>
+
+    </section>
+  <% end %>
+  <div class='h-fit'>
+    <%= render 'skills/skills' %>
+  </div>
+</div>
 
 <%= render 'shared/chat_dialogue' %>
 

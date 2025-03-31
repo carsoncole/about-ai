@@ -5,5 +5,6 @@ class HomeController < ApplicationController
   def index
     @projects = Project.order(:order, :created_at)
     @experiences = Experience.order(start_date: :desc)
+    @categories = Skill.categories
   end
 end
