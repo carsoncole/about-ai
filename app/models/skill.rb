@@ -1,3 +1,3 @@
 class Skill < ApplicationRecord
-  enum :category, [:Languages, :Frameworks, :Databases, :devops_cloud, :Other]
+  enum :category, [:Languages, :Frameworks, :Databases, :"Devops/Cloud", :Other]
 end
