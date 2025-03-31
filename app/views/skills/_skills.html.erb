@@ -9,9 +9,7 @@
         <div class="font-bold">
           <%= category %>
         </div>
-        <% Skill.where(category: category).each do |s| %>
           <%= skills.map{|key| key.name }.join(", ") %>
-        <% end %>
       </div>
     <% end %>
   <% end %>
